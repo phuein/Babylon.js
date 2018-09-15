@@ -1,12 +1,12 @@
 ﻿# Materials library
 
-To get a detailled tutorial, please read the [documentation](http://doc.babylonjs.com/tutorials/How_to_create_a_material_for_materialsLibrary)
+To get a detailed tutorial, please read the [documentation](http://doc.babylonjs.com/tutorials/How_to_create_a_material_for_materialsLibrary)
 
 For every material, you can find a detailled documentation [here](http://doc.babylonjs.com/extensions) under **materials library** tag.
 
 ## Using a material from the library
 
-You can find multiple materials that just works with Babylon.js in *dist* folder. To use then, you only need to reference the associated .js file and use the new provided material:
+You can find multiple materials that just work with Babylon.js in the *dist* folder. To use them, you only need to reference the associated .js file and use the new provided material:
 
 ```
 var simple = new BABYLON.SimpleMaterial("simple", scene);
@@ -15,7 +15,7 @@ sphere.material = simple;
 
 ## Adding a new material to the library
 
-To add a new material, you have to create your own folder in *materials* folder in src. Then you need to add a .ts file an two .fx files:
+To add a new material, you have to create your own folder in the *materials* folder in src. Then you need to add a .ts file an two .fx files:
 * The .ts is the TypeScript code of your material
 * .fx files: GLSL code for vertex and fragment shaders
 
@@ -29,11 +29,11 @@ The best way to start a new material is to copy/past the *simple* material. This
 - Point rendering support
 - Clip plane support
 
-But you can also start from scratch as you are not forced to support all these features.
+But you can also start from scratch, as you are not forced to support all these features.
 
 ## Integrating the material in the build process
 
-To build all materials and generate the *dist* folder, just run from the tools/gulp folder:
+To build all the materials and generate the *dist* folder, just run from the tools/gulp folder:
 
 ```
 gulp materialsLibrary
